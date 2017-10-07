@@ -1,3 +1,8 @@
+.wrapper{
+  width:800px;
+  margin: 0 auto;
+
+}
 div{
   margin: 10px;
   padding: 10px;
@@ -12,8 +17,9 @@ h1, h2, h3, h4 {
 	text-align: left;
 }
 img{
-    display: block;
+  display: block;
 	margin: 0 auto;
+  width: 800px;
 }
 .content {
   display: inline-block;
