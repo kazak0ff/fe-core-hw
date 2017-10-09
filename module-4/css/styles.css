@@ -92,3 +92,11 @@ span:before {
 span:after {
   content: '\201D';
 }
+
+div > h5 {
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
