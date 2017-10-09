@@ -85,3 +85,10 @@ h4:before {
   padding-left: 10px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABfSURBVDhP7cxBDsAgCAVR738MT+ctaFjQWBiVJtpVX/J3MEU2+i5WagubwRhF/EiI0eNo3iNGD6v1zsToMDvzx/Izd0zR4Wq9czFFD6N5Iabo0Y9gzGQjZhp7a2NM5AK0bZ4Ws6pSqAAAAABJRU5ErkJggg==);
 }
+
+span:before {
+  content: '\201C';
+}
+span:after {
+  content: '\201D';
+}
