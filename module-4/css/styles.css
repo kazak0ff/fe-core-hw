@@ -1,6 +1,8 @@
 body {
   background: #ccf url('http://oboi-dlja-stola.ru/file/8249/1920x1080/crop/%D0%9C%D0%BE%D1%80%D0%B5-2.jpg') no-repeat center  fixed ;
   counter-reset: count-box;
+  font-family: CenturyGothic, AppleGothic, sans-serif;
+
 
 }
 
@@ -42,21 +44,20 @@ hr {
   margin-right: 20px;
 }
 
-h4 {
-  counter-increment: count-box;
-}
 h4:before {
+  color: white;
+  counter-increment: count-box;
   content: counter(count-box);
   margin-right: 10px;
-  margin-left: 20px;
   padding-left: 5px;
   padding-right: 5px;
+  font-style: italic;
 }
 
-span:before {
+p > span:before {
   content: '\201C';
 }
-span:after {
+p > span:after {
   content: '\201D';
 }
 
@@ -75,7 +76,7 @@ div > h5 {
 
 .first_column {
   display: inline-block;
-  width: 60%;
+  width: 59%;
   margin-right: -4px;
 }
 
@@ -88,8 +89,7 @@ div > h5 {
 .content {
   display: inline-block;
   width: 42%;
-  font-size: 20px;
-  text-align: left;
+  font-size: 17px;
   margin-left: 0px;
   margin-right: -4px;
   text-align: center; 
@@ -125,7 +125,7 @@ div > h5 {
 {
 position: relative;
 width: 210px;
-height: 140px;
+height: 160px;
 padding: 0px;
 background: #FFFFFF;
 -webkit-border-radius: 10px;
