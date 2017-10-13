@@ -1,6 +1,7 @@
 body {
   background-image: url('../img/page-bg.jpg');
-  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .wrapper{
@@ -53,6 +54,10 @@ h2 {
   font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
 }
 
+ul, li {
+margin: 0;
+padding: 0;
+}
 
 img{
   display: block;
@@ -66,12 +71,16 @@ li {
   list-style-type: none;
 }
 
-.content ul{
-  font-size: 14px; 
+.content li{
   display: inline-block;
-  width: 180px;
-  text-align: center; 
+  margin-left: 40px;
+  font-size: 14px; 
+  width: 170px;
+  text-align: left; 
   color: #263555;
   margin-right: -4px;
+}
 
+.content ul {
+  padding-bottom: 20px;
 }
