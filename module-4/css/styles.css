@@ -45,6 +45,7 @@ p > span:after {
 
 h1, h2, h4, h5 {
   color: #263555;
+
 }
 
 .content li {
@@ -55,7 +56,10 @@ h1, h2, h4, h5 {
 }
 
 .wrapper {
-  font-family: Arial, lighter;
+  font-family: Arial, sans-serif;
+  font-variant: inherit;
+  line-height: 1.5;
+  font-stretch: condensed;
   background-color: white;
   width:1022px;
   margin: 0 auto; 
