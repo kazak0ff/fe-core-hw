@@ -34,7 +34,7 @@ ul {
 
 }
 
-header {
+nav {
 	width: 900px;
 	margin: 0 auto;
 	padding-left: 100px;
@@ -69,6 +69,73 @@ main {
 	margin: 0 auto;
 }
 
+
+
+
+/* MENU */
+.menu__item {
+  position: relative;
+}
+
+.submenu__item > a {
+  height: 85px;
+  width: 100px;
+  padding: 0 35px; 
+  color: #6b7488;
+  text-decoration: none;
+}
+
+
+.menu__item>a:hover,
+.submenu__item>a:hover {
+  color: #263555;
+}
+
+.submenu {
+  line-height: 0.8;
+  text-align: center;
+  width: 66px;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: -108px;
+  /* необходимо перекрыть border  .menu  */
+  top: 40px;
+  list-style: none;
+  background: #fff;
+  padding-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* делаем .submenu видимым */
+
+.menu__item:hover>.submenu {
+  display: block;
+
+}
+
+.submenu__item {
+  position: relative;
+  left:-32px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.submenu:before {
+	  content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 84px;
+    left: 30px;
+    border-style: solid;
+    border-width: 0 2px 4px 2px;
+    border-color: transparent transparent #fff transparent;
+}
+
+
 /* logo */
 .logo-text {
 	position: absolute;
@@ -89,22 +156,84 @@ main {
     position: relative;
 }
 
-#slider a {
+.slider a {
     color: #222;
+}
 
+.slider a {
+	position: relative;
+	left: 20px;
+	bottom: 35px;	
+	height: 10px;
+	width: 10px;
+    text-decoration: none;
+    background: #38afe5;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+}
+
+.slider-fon1 {
+	position: absolute;
+	width: 224px;
+	height: 60px;
+	left: 62px;
+	top: 276px;
+	background-color: #fff;
+	
 
 }
 
+.slider-text1 {
+	left: 75px;
+	top: 293px;
+	position: absolute;
+	color: 263555;
+	font-family: 'Pathway Gothic One', sans-serif; 
+	font-size: 22px;
+	text-align: center;
+	font-weight: 500;
+} 
+
+.slider-fon2 {
+	position: absolute;
+	width: 293px;
+	height: 60px;
+	left: 62px;
+	top: 336px;
+	background-color: #38afe5;
+}
+
+.slider-text2 {
+	left: 83px;
+	top: 345px;
+	position: absolute;
+	color: #fff;
+	font-family: 'Pathway Gothic One', sans-serif; 
+	font-size: 34px;
+	text-align: center;
+	font-weight: 500;
+} 
 
 .middle-text {
 	font-family: 'Pathway Gothic One', sans-serif; 
-	font-size: 20px;
+	font-size: 30px;
 	color: #263555;
 	margin-top: 55px;
 	margin-bottom: 50px;
 }
 
 /* detaiuls */
+
+h3 {
+	font-size: 30px;
+}
 
 .details {
 	position: relative;
@@ -123,23 +252,11 @@ main {
 	margin-right: 0px;
 }
 
-.details:before {
-	display: table-cell;
-	vertical-align: middle;
-	width: 145px;
-	height: 272px;
-	font-family: Arial, sans-serif; 
-	font-size: 11px;
-	position: absolute;
-	background-color: #193149;
-	color: white;
-	content: '';
-	background-size: 100px 100px;
-	text-align: left;
-}
 
-.details:after {
+.detail-button {
 	position: absolute;
+	display: none;
+	z-index: 200;
 	right: 770px;
 	top: 230px;
 	font-family: Arial, sans-serif; 
@@ -154,18 +271,40 @@ main {
    	border-radius: 5px;
 }
 
-h3 {
-	font-size: 30px;
-}
-
 .detail-text {
-	width: 140px;
+	z-index: 100;
 	position: absolute;
+	display: none;
+	width: 140px;
 	right: 750px;
 	top: 40px;
 	color: white;
 	font-family: Arial, sans-serif; 
 	font-size: 11px;
+}
+
+.detail-fon {
+	position: absolute;
+	vertical-align: middle;
+	display: none;
+	width: 145px;
+	height: 272px;
+	background-color: #193149;
+	background-size: 100px 100px;
+	left: 0px;
+	bottom: 4px;
+}
+
+.details:hover>.detail-text {
+  display: block;
+}
+
+.details:hover>.detail-fon {
+  display: block;
+}
+
+.details:hover>.detail-button {
+  display: block;
 }
 
 h3 {
@@ -176,13 +315,13 @@ h3 {
 
 /*top button*/
 .topbutton {
-	position: absolute;
+position: fixed;
 width:20px;
 height:20px;
 background:#38afe5;
 padding:10px;
-bottom:20px;
-right:15px;
+bottom:90px;
+right:130px;
 color:#fff;
 border-radius: 30px;
 -moz-border-radius: 30px;

@@ -8,43 +8,76 @@
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
 </head>
 <body>
-	<header>	
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">GALLERY</a></li>
-			<li><a href="#" class="logo"></a></li>
-			<li><a href="#">TOURS</a></li>
-			<li><a href="#">BLOG</a></li>
-			<li><a href="#">CONTACTS</a></li>
+	<nav>	
+		<ul class="menu">
+			<li class="menu__item">
+				<a href="#">HOME</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">ABOUT</a>
+				<ul class="submenu">
+		          <li class="submenu__item">
+		            <a href="#">AGENCY</a>
+		          </li>
+		          <li class="submenu__item">
+		            <a href="#"">NEWS</a>
+		          </li>
+		          <li class="submenu__item">
+		            <a href="#"">TEAM</a>
+		          </li>
+		        </ul>
+			</li>
+			<li class="menu__item">
+				<a href="#">GALLERY</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="logo"></a>
+			</li>
+			<li class="menu__item">
+				<a href="#">TOURS</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">BLOG</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">CONTACTS</a>
+			</li>
 			<li class="logo-text">JOURNEY<li>
 		</ul>
-	</header>	
+	</nav>	
 	<main>	
         <!-- Images -->
      	<div id="images">
-        	<img id="image1" src="img/slider/1.jpg" />
-        	<img id="image2" src="img/slider/2.jpg" />
-        	<img id="image3" src="img/slider/3.jpg" />
+        	<img id="image1" src="img/slider/1.jpg" alt="slide1">
+        	<img id="image2" src="img/slider/2.jpg" alt="slide2">
+        	<img id="image3" src="img/slider/3.jpg" alt="slide3">
+        	<img id="image4" src="img/slider/4.jpg" alt="slide4">
     	</div>
-    	<div id="slider">
+    	<div class="slider">
         	<a href="#image1">1</a>
         	<a href="#image2">2</a>
         	<a href="#image3">3</a>
+        	<a href="#image4">4</a>
     	</div>
+    	<div class="slider-fon1"></div>
+    	<div class="slider-text1">THERE ARE PLENTY OF PLACES</div>
+    	<div class="slider-fon2"></div>
+    	<div class="slider-text2">THAT ARE WORTH SEEING</div>
+
 		<div class="middle-text">TOP DESTINANTIONS</div>
-		<div class="details">
-			<img src="img/details/details.jpg" width="290">
-			<img src="img/details/details2.jpg" width="290">
-			<img src="img/details/details3.jpg" width="290">
+		<article class="details">
+			<img src="img/details/details.jpg" width="290" alt="detail1">
+			<img src="img/details/details2.jpg" width="290" alt="detail2">
+			<img src="img/details/details3.jpg" width="290" alt="detail3">
 			<div class="detail-text">
 				<h3>VENICE</h3>
 				<span>.e malesuada turpis no. diam euismod, ut eleifend lorem malesuada. Ut mi massa, ullamcorper in dignissim id, ultrices sed nisl. Curabitur semper vehicula arcu. In aliquam, nulla vitae dapibus </span>
 			</div>
-		</div>
+			<div class="detail-fon"></div>
+			<div class="detail-button">Details</div>
+		</article>
 		<a href="#" title="Вернуться к началу" class="topbutton"></a>
 		<div class="strela"></div>
-
 	</main>	
 
 
