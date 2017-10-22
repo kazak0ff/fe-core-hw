@@ -26,6 +26,8 @@ p {
     padding: 0;
     font-family: Arial, sans-serif; 
 	font-size: 13px;
+	line-height: 1.5;
+
 }
 ul > li {
 	list-style: none;	
@@ -45,7 +47,7 @@ header {
 	padding-bottom: 45px;
 }
 
-ul {
+.menu {
 	padding: 0;
 	list-style-type: none;
 	padding: 0 auto;
@@ -110,7 +112,7 @@ nav {
 .submenu {
   line-height: 0.8;
   text-align: center;
-  width: 66px;
+  width: 30px;
   height: 80px;
   display: none;
   position: absolute;
@@ -133,7 +135,7 @@ nav {
 
 .submenu__item {
   position: relative;
-  left:-32px;
+  left:-55px;
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
@@ -184,7 +186,7 @@ h4 {
     }
 
 
-img {
+.main section > img {
   width: 350px;
   float: left;
   margin-right: 25px;
@@ -196,7 +198,7 @@ img {
 
 
 .circle:before {
-	font-weight: lighter;
+  font-weight: lighter;
   display: inline-block;
   color: white;
   counter-increment: count-box;
@@ -206,7 +208,7 @@ img {
   padding-top: 4px;
   padding-bottom: 4px;
   margin-right: 10px;
-  margin-left: -30px;
+  margin-left: -20px;
   background: #38afe5;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -224,3 +226,254 @@ width: 900px;
   margin-top: 50px;
   color: #dedbdb;
 }
+
+/* ARTICLE */
+.content {
+	margin-top: 35px;
+}
+.content ul {
+	margin: 0;
+	padding: 0;
+}
+article {
+	width: 700px;
+}
+
+.content li {
+  display: inline-block;
+  list-style-type: none;
+  color: #263555;
+  width: 300px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;	
+}
+
+.content ul > li:before {
+  content: url(../img/bf.png);
+  margin-right: 10px;
+}
+
+/* SECOND ASIDE */
+.bubble {
+  position: relative;
+  bottom: 30px; 
+  width: 210px;
+  height: 190px;
+  padding: 0px;
+  background: #fcfafa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #dfdcdc solid 1px;
+  right: 10px;
+}
+
+.bubble-text {
+	margin-top: 10px;
+	position: relative;	
+	left: 10px;
+	width: 180px;
+	color: #263555;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 16px 10px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 89px;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 19px 11px 0;
+  border-color: #e9e6e6 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -20px;
+  left: 88px;
+}
+
+.text-center {
+	text-align: center;	
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	align-content: center;
+	background-color: #30455b;
+	width: 904px;
+	height: 130px;
+	margin: 0 auto;
+	padding-left: 60px;
+	padding-right: 60px;
+
+}
+
+.footer {
+	padding-left: 40px;
+	padding-right: 60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	justify-content: space-around;	
+	align-items: center;	
+	align-content: center;
+}
+.footer li{
+	width: 	200px;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+
+/* SOCIALICONS*/
+.social-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.icons {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+
+}
+
+.icons li {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.social-text {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+
+/*** BLOG ***/
+
+/* RECENT POSTS */
+
+.posts {
+	display: flex;
+	flex-direction: column;
+}
+
+.posts h2 {
+	font-size: 32px;
+	font-weight: lighter;
+}
+
+.post-data {
+	display: inline-block;	
+	padding: 5px;
+	text-align: center;
+	background-color: #38afe5;
+  	border-radius: 20px;
+	width: 30px;
+	height: 30px; 
+  	color: #fff;
+}		
+
+.post-data p{
+
+		font-size: 9px;
+		color: #fff;
+		word-wrap: break-word;
+}
+
+.posted-by {
+	display: inline-block;	
+}
+
+
+.posted-on {
+	display: inline-block;
+}
+
+.second-span {
+	text-align: right;	
+}
+.posted-comment{
+	text-align: right;	
+}
+
+/* CATEGORIES ARCHIVE */
+.post-aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.posts div > img {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+
+.posts h4 {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+
+.detail-button{
+	margin: 0 auto;
+	margin-top: 5px;
+	font-family: Arial, sans-serif; 
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	background: #fbf6f9;
+	width: 60px;
+   	height: 20px;
+   	border-radius: 5px;
+   	border: #b5aeaf solid 1px;
+}
+
+.detail-button a {
+	color: black;
+}
+
+.posts hr {
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	color: #dedbdb;
+}
+
+.post-aside h2 {
+	font-size: 32px;
+	font-weight: lighter;
+	margin-bottom: 45px;
+
+}
+
+.post-aside li {
+	width: 100%;
+    font-size: 13px;
+	line-height: 2.2;
+}
+
+.post-aside ul {
+	margin-top: 0px;
+	margin-bottom: 55px;
+}
+
