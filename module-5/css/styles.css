@@ -1,5 +1,5 @@
 * {
-margin: 0;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -8,10 +8,10 @@ margin: 0;
 }
 
 body {
-background: url('../img/background.jpg') 100% 100% no-repeat;
-background-size: cover;
-padding-top: 45px;
-padding-bottom: 700px;
+	background: url('../img/background.jpg') 100% 100% no-repeat;
+	background-size: cover;
+	padding-top: 45px;
+	padding-bottom: 700px;
 }
 
 ul > li {
@@ -47,6 +47,7 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
+
 a.logo{
 	width: 140px;
    	height: 140px;
@@ -70,8 +71,6 @@ main {
 }
 
 
-
-
 /* MENU */
 .menu__item {
   position: relative;
@@ -83,19 +82,21 @@ main {
   padding: 0 35px; 
   color: #6b7488;
   text-decoration: none;
+  text-align: center;
 }
 
 
 .menu__item>a:hover,
 .submenu__item>a:hover {
   color: #263555;
+  text-align: center;
 }
 
 .submenu {
+  display: none;
   line-height: 0.8;
   text-align: center;
   width: 66px;
-  display: none;
   position: absolute;
   z-index: 999;
   left: -108px;
@@ -105,6 +106,11 @@ main {
   background: #fff;
   padding-bottom: 5px;
   border-radius: 3px;
+}
+
+.first-submenu {
+	position: relative;
+	left: -4px;
 }
 
 /* делаем .submenu видимым */
@@ -123,7 +129,7 @@ main {
 }
 
 .submenu:before {
-	  content: '';
+	content: '';
     display: inline-block;
     position: absolute;
     width: 0;
@@ -253,9 +259,11 @@ h3 {
 }
 
 
-.detail-button {
-	position: absolute;
+.detail-button,
+.detail-button-ny,
+.detail-button-paris {
 	display: none;
+	position: absolute;
 	z-index: 200;
 	right: 770px;
 	top: 230px;
@@ -271,7 +279,17 @@ h3 {
    	border-radius: 5px;
 }
 
-.detail-text {
+.detail-button-ny {
+	right: 470px;
+}
+
+.detail-button-paris {
+	right: 165px;
+}
+
+.detail-text,
+.detail-text-ny,
+.detail-text-paris {
 	z-index: 100;
 	position: absolute;
 	display: none;
@@ -283,7 +301,17 @@ h3 {
 	font-size: 11px;
 }
 
-.detail-fon {
+.detail-text-ny {
+	right: 450px;
+}
+
+.detail-text-paris {
+	right: 143px;
+}
+
+.detail-fon,
+.detail-fon-ny,
+.detail-fon-paris {
 	position: absolute;
 	vertical-align: middle;
 	display: none;
@@ -295,7 +323,23 @@ h3 {
 	bottom: 4px;
 }
 
+.detail-fon-ny {
+	left: 304px;
+}
+
+.detail-fon-paris {
+	left: 609px;
+}
+
 .details:hover>.detail-text {
+  display: block;
+}
+
+.details:hover>.detail-text-ny {
+  display: block;
+}
+
+.details:hover>.detail-text-paris {
   display: block;
 }
 
@@ -303,7 +347,23 @@ h3 {
   display: block;
 }
 
+.details:hover>.detail-fon-ny {
+  display: block;
+ }
+
+ .details:hover>.detail-fon-paris {
+  display: block;
+ }
+
 .details:hover>.detail-button {
+  display: block;
+}
+
+.details:hover>.detail-button-ny {
+  display: block;
+}
+
+.details:hover>.detail-button-paris {
   display: block;
 }
 
@@ -315,24 +375,24 @@ h3 {
 
 /*top button*/
 .topbutton {
-position: fixed;
-width:20px;
-height:20px;
-background:#38afe5;
-padding:10px;
-bottom:90px;
-right:13%;
-color:#fff;
-border-radius: 30px;
--moz-border-radius: 30px;
--webkit-border-radius: 30px;
--khtml-border-radius: 30px;
+	position: fixed;
+	width:20px;
+	height:20px;
+	background:#38afe5;
+	padding:10px;
+	bottom:90px;
+	right:13%;
+	color:#fff;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-khtml-border-radius: 30px;
 }
 
 .topbutton:before {
-content: url(../img/up.png);	
-position: absolute;
-width:20px;
-height:20px;
-right: 6px;
+	content: url(../img/up.png);	
+	position: absolute;
+	width:20px;
+	height:20px;
+	right: 6px;
 }
