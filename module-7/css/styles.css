@@ -610,16 +610,15 @@ background-color:#000;
 	position: absolute;
 	width: 224px;
 	height: 60px;
-	left: 62px;
-	top: 276px;
+	top: 576px;
 	background-color: #fff;
 	
 
 }
 
 .slider-text1 {
-	left: 75px;
-	top: 293px;
+	margin-left: 15px;
+	top: 593px;
 	position: absolute;
 	color: 263555;
 	font-family: 'Pathway Gothic One', sans-serif; 
@@ -632,14 +631,13 @@ background-color:#000;
 	position: absolute;
 	width: 293px;
 	height: 60px;
-	left: 62px;
-	top: 336px;
+	top: 636px;
 	background-color: #38afe5;
 }
 
 .slider-text2 {
-	left: 83px;
-	top: 345px;
+	margin-left: 15px;
+	top: 645px;
 	position: absolute;
 	color: #fff;
 	font-family: 'Pathway Gothic One', sans-serif; 
@@ -649,11 +647,14 @@ background-color:#000;
 } 
 
 .middle-text {
+	width: 100%;
+	text-align: left;
 	font-family: 'Pathway Gothic One', sans-serif; 
 	font-size: 30px;
 	color: #263555;
 	margin-top: 55px;
 	margin-bottom: 50px;
+	align-self: left
 }
 
 /* details */
@@ -663,28 +664,20 @@ h3 {
 }
 
 .details {
+	width: 100%;
 	position: relative;
+	display: flex;
+	justify-content: space-between;	
+	
 }
-.details > div {
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 5.5px;
-}
-
-.details > div:first-of-type {
-	margin-left: 0px;
-}
-
-.details > div:last-of-type {
-	margin-right: 0px;
-}
-
 
 .detail-button,
 .detail-button-ny,
 .detail-button-paris {
-	display: none;
-	position: absolute;
+    opacity: 0;
+  	visibility: hidden;
+    transition: opacity 1s, visibility 0s linear 1s;	
+    position: absolute;
 	z-index: 200;
 	right: 770px;
 	top: 230px;
@@ -713,9 +706,11 @@ h3 {
 .detail-text-paris {
 	z-index: 100;
 	position: absolute;
-	display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s linear 1s;
 	width: 140px;
-	right: 755px;
+	right: 757px;
 	top: 40px;
 	color: white;
 	font-family: Arial, sans-serif; 
@@ -723,11 +718,11 @@ h3 {
 }
 
 .detail-text-ny {
-	right: 451px;
+	right: 452px;
 }
 
 .detail-text-paris {
-	right: 145px;
+	right: 146px;
 }
 
 .detail-fon,
@@ -735,7 +730,9 @@ h3 {
 .detail-fon-paris {
 	position: absolute;
 	vertical-align: middle;
-	display: none;
+	opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s linear 1s;
 	width: 145px;
 	height: 272px;
 	background-color: #193149;
@@ -745,31 +742,44 @@ h3 {
 }
 
 .detail-fon-ny {
-	left: 304px;
+	left: 307px;
 }
 
 .detail-fon-paris {
-	left: 609px;
+	left: 614px;
 }
 
 .detail1:hover>.detail-text,
 .detail1:hover>.detail-fon,
 .detail1:hover>.detail-button
- {
-  display: block;
+{
+	opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+  
 }
+
+.detail1 {
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
 
 .detail2:hover>.detail-text-ny,
 .detail2:hover>.detail-fon-ny, 
 .detail2:hover>.detail-button-ny {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 
 .detail3:hover>.detail-text-paris,
 .detail3:hover>.detail-fon-paris,
 .detail3:hover>.detail-button-paris {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+
 }
 
 h3 {
@@ -801,4 +811,43 @@ h3 {
 	width:20px;
 	height:20px;
 	right: 6px;
+}
+
+/* CONTACTS*/
+.contact-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.gmap {
+	width: 49%;
+}
+
+
+.map-text {
+	width: 	24%;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #666565;
+}
+
+.freephone {
+	display: flex;
+	justify-content: space-between;
+}
+
+.map-h2 {
+	width: 100%;
+	font-size: 32px;
+	font-weight: 100;
+}
+
+
+/* FORM */
+.form {
+	width: 24%;
+}
+
+.red-text {
+	color: red;
 }
