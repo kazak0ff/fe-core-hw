@@ -355,7 +355,22 @@ footer {
 	display: flex;
 	padding: 0;
 	justify-content: center;
-
+}
+.bg-fb{
+    width: 40px; height: 40px;
+    background: url('../img/social-icons/css_sprites.png') -10px -10px;
+}
+.bg-gp {
+    width: 40px; height: 40px;
+    background: url('../img/social-icons/css_sprites.png') -70px -10px;
+}
+.bg-ln {
+    width: 40px; height: 40px;
+    background: url('../img/social-icons/css_sprites.png') -10px -70px;
+}
+.bg-tw {
+    width: 40px; height: 40px;
+    background: url('../img/social-icons/css_sprites.png') -70px -70px;
 }
 
 .icons li {
@@ -383,10 +398,6 @@ footer {
 	font-size: 32px;
 	font-weight: lighter;
 }
-
-
-
-
 
 .post-data {
 	display: flex;	
@@ -434,12 +445,6 @@ footer {
 	font-size: 10px;
 	color: #868f8f;
 }
-
-
-
-
-
-
 
 
 /* CATEGORIES ARCHIVE */
