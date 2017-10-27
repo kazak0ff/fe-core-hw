@@ -788,6 +788,86 @@ h3 {
 	margin-bottom: 25px;
 }
 
+.tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 55px;
+	
+}
+
+.tabs-details {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.tab-info {
+	display: flex;
+	flex-direction: row-reverse;
+	border: #dedbdb 1px solid;
+	border-collapse: collapse;
+}
+
+.newsletter {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	border: #dedbdb 1px solid;
+	border-collapse: collapse;
+}
+
+.newsletter-name {
+	border: #dedbdb 1px solid;
+	border-collapse: collapse;
+}
+
+.newsletter-info {
+	border: #dedbdb 1px solid;
+	height: 100%;
+}
+
+.tabs-array {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-family: 'Pathway Gothic One', sans-serif; 
+	font-size: 20px;	
+	color: #6b7488;
+}
+
+.tab1 {
+	width: 125px;
+	border: #dedbdb 1px solid;
+	position: relative;	
+	width: 	125px;
+	border-collapse: collapse;
+	text-align: center;	
+	color: #60bfea;
+}
+
+.tab1:before {
+	content: '';
+	width: 125px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 100%;
+	right: 0%;
+	text-align: center;	
+}
+
+.tab {
+	width: 125px;
+	border: #dedbdb 1px solid;
+	width: 125px;
+	border-collapse: collapse;
+	text-align: center;	
+}
+
 /*top button*/
 .topbutton {
 	position: fixed;
