@@ -553,7 +553,6 @@ footer {
 }
 
 .topbutton:before {
-
 	content: url(../img/up.png);	
 	position: absolute;
 	width:20px;
@@ -562,6 +561,14 @@ footer {
 }
 .gallery {
 	position: relative;
+}
+
+.h2-gallery {
+	position: relative;
+	left: 10px;
+	font-family: 'Pathway Gothic One', sans-serif; 
+	font-size: 28px;
+	font-weight: 100;
 }
 
 .image {
@@ -591,4 +598,15 @@ background-color:#000;
 	content: url(../img/gallery/lupa.png);	
 	top:75px;
 	left: 130px;
+}
+
+.icons li{
+	padding: 0px;
+}
+
+.icons li a { 
+	margin: 0px; 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
 }
