@@ -324,8 +324,8 @@ h2{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-left: 37px;
-	margin-right: 37px;
+	margin-left: 7.7%;
+	margin-right: 7.7%;
 }
 
 .content {
@@ -422,8 +422,8 @@ background-color:#000;
 	}
 
 	.gallery {
-		margin-left: 45px;
-		margin-right: 45px;
+		margin-left: 5.8%;
+		margin-right: 5.8%;
 	}
 
 	.topbutton {
@@ -436,7 +436,7 @@ background-color:#000;
 		position: absolute;
 		width:30px;
 		height:30px;
-		right: 0px;
+		right: 0;
 		top: 10px;
 	}
 
@@ -466,8 +466,8 @@ background-color:#000;
 	}
 
 	.gallery {
-		margin-left: 60px;
-		margin-right: 60px;
+		margin-left: 5.8%;
+		margin-right: 5.8%;
 	}
 }
 
