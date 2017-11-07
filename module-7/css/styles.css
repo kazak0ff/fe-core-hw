@@ -27,6 +27,7 @@ p {
 	color: #4e5050;
 
 }
+
 ul > li {
 	list-style: none;	
 	font-family: 'Pathway Gothic One', sans-serif; 
@@ -1043,6 +1044,14 @@ h3 {
 	font-family: Arial, sans-serif;
 	font-size: 13px;
 	color: #666565;
+}
+
+.padding-buttom{
+	padding-bottom: 25px;
+}
+
+.margin-buttom-small {
+	padding-bottom: 15px;
 }
 
 .freephone {
