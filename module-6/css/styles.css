@@ -31,8 +31,10 @@ ul > li {
 	list-style: none;	
 	font-family: 'Pathway Gothic One', sans-serif; 
 	font-size: 28px;
-	font-weight: lighter: ;
+	font-weight: 300;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -233,10 +235,12 @@ width: 900px;
 .content {
 	margin-top: 35px;
 }
+
 .content ul {
 	margin: 0;
 	padding: 0;
 }
+
 article {
 	width: 700px;
 }
@@ -249,6 +253,7 @@ article {
   font-size: 15px;
   font-family: Arial, sans-serif;
   font-weight: lighter;	
+  line-height: 2.2;
 }
 
 .content ul > li:before {
