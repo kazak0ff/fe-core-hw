@@ -982,10 +982,10 @@ h3 {
 .tab1:before {
 	content: '';
 	width: 125px;
-	height: 3px;
+	height: 5px;
 	background: #fff;
 	position: absolute;
-	top: 99%;
+	top: 90%;
 	right: 0%;
 	text-align: center;	
 }
