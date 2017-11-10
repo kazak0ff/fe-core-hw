@@ -7,7 +7,7 @@ body {
 	background: url('../img/background.jpg') no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
-	overflow:  hidden;
+	overflow-x:hidden;
 }
 
 nav {

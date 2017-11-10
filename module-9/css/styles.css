@@ -3,9 +3,10 @@
 }
 
 body {
-	background: url('../img/background.jpg') no-repeat;
+	background: url('../img/background.jpg') 100% 100% no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
+	overflow:  hidden;
 }
 
 nav {
