@@ -215,7 +215,7 @@ a {
 
 
 /** MENU 1024 **/
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
 	ul > li {
 		font-size: 28px;
@@ -684,4 +684,158 @@ ul .footer-mail{
 		right: 20px;
 	}
 		
+}
+
+/************** TOURS *****************/
+
+/* Tours Section */
+
+
+.tours-h2 {
+	position: relative;
+	left: 32px;
+	width: 100%;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.tour-info p {
+	font-size: 14.04px;
+	margin-top: 10px;
+}
+.main-tour-text {
+	font-family: Arial, sans-serif;
+	font-size: 16.85px;
+	font-weight: 500;
+	color: #263555;
+}
+
+.price {
+	font-size: 18.25px;
+	font-weight: 400;
+	color: #60bbe9;
+}
+
+.tour-button input {
+	position: relative;
+	left: 35px;
+	background-color: #fbf6f9;	
+	outline: none;
+	border: 1.5px solid #beb7b8;
+	border-radius: 5px;
+	width: 60px;
+	height: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 11px;
+	margin-bottom: 20px;
+}
+
+.tour-search-form {
+	padding: 0 35px;
+}
+
+/* Tours Aside */
+
+.browse-text {
+	font-size: 10px;
+	color: #4e5050;
+	margin-bottom: 5px;
+}
+
+.browse-select {
+	width: 100%;
+	background-color: #fcfafa;
+	border: #dedbdb 1px solid;
+	color: #868f8f;
+	margin-bottom: 25px;
+}
+
+.select {
+	position: relative;
+}
+
+.select:after {
+	position: absolute;
+	z-index: 100;
+	content: '';
+	width: 1px;
+	height: 20px;
+	bottom: 55%;
+	right: 20px;
+	background-color: #dedbdb;
+}
+
+option {
+	font-size: 10.2px;
+	color: #fff;
+	background-color: #e3e2e2;
+}
+
+.tours-h2-search {
+	position: relative;
+	left: 15px;
+	width: 100%;
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.blue-p {
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color: #38afe5;
+}
+
+.tour-image img {
+	width: 200px;
+	height: auto;
+}
+
+.tour-info {
+	padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+	.tour-image img {
+		width: 160px;
+		height: auto;
+	}
+
+	.tour-info {
+		padding-left: 10px;
+	}
+
+	.tour-info p {
+		font-size: 11.91px;
+	}
+
+	.main-tour-text {
+		font-size: 14.29px;
+	}
+
+	.price {
+		font-size: 15.48px;
+	}
+}
+
+@media (min-width: 992px) {
+	.tour-image img {	
+		width: 134px;
+		height: auto;
+	}
+
+	.tour-info p {
+		font-size: 10px;
+	}
+
+	.main-tour-text {
+		font-size: 12px;
+	}
+
+	.price {
+		font-size: 13px;
+	}
 }
