@@ -1,12 +1,13 @@
 * {
 	list-style-type: none;
+	text-decoration: none; 
 }
 
 body {
 	background: url('../img/background.jpg') 100% 100% no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
-	overflow:  hidden;
+	overflow-x:hidden;
 }
 
 nav {
@@ -98,18 +99,23 @@ a {
 .menu__item>a:hover,
 .submenu__item>a:hover {
 	color: #263555;
+	text-decoration: none; 
+}
+
+.logo_item>a:hover {
+	text-decoration: none; 
+	color: #263555;
 }
 
 .submenu {
 	line-height: 0.8;
 	text-align: center;
 	width: 46px;
-	height: 63px;
 	display: none;
 	position: absolute;
 	z-index: 999;
 	/* необходимо перекрыть border  .menu  */
-	right: 30px;
+	right: 40px;
 	top: 30px;
 	list-style: none;
 	background: #fff;
@@ -187,17 +193,16 @@ a {
 
 	.submenu {
 		width: 60px;
-		height: 75px;
 		display: none;
 		position: absolute;
-		right: 46px;
+		right: 64px;
 		top: 40px;
 		padding-bottom: 5px;
 	}
 
 
 	.submenu:before {
-	    bottom:80px;
+	    bottom:74px;
 	    right: 28px;
 	}
 
@@ -210,7 +215,7 @@ a {
 
 
 /** MENU 1024 **/
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
 	ul > li {
 		font-size: 28px;
@@ -230,6 +235,7 @@ a {
 		display: flex;
 		justify-content: flex-start;
 		margin-bottom: 10px;
+		padding-bottom: 15px;
 	}
 
 	.logo{
@@ -253,7 +259,7 @@ a {
 		height: 85px;
 		display: none;
 		position: absolute;
-		right: 38px;
+		right: 44px;
 		top: 40px;
 		padding-bottom: 0px;
 	}
@@ -288,7 +294,7 @@ a {
 
 /** MAIN BLOCK 480 **/
 .main {
-
+	max-width: 480px;
 	margin: 0 auto;
 	background-color: #fff;
 	padding-top: 60px;
@@ -296,7 +302,7 @@ a {
 }
 
 h2{
-	left: 10%;
+	left: 5%;
 	position: relative;
 	font-family: 'Pathway Gothic One', sans-serif; 
 	font-size: 28px;
@@ -306,20 +312,13 @@ h2{
 	margin-bottom: 15px;
 }
 
-.gallery {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-
-}
 
 .content {
 	position: relative;
 }
 
 .image {
-	position: relative;
+	text-align:center;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
@@ -374,23 +373,28 @@ background-color:#000;
 }
 
 .topbutton:before {
-
 	content: url(../img/up.png);	
 	position: absolute;
 	width:20px;
 	height:20px;
-	right: 3px;
-	top: 5px;
+	left: 4px;
+	bottom: 5px;
+
 }
 
 
 @media (min-width: 768px) {
 	h2 {
-		left: 3%;
+		left: 4%;
 	}
 
 	.main {
 		max-width: 768px;
+	}
+
+	.gallery {
+		padding-left: 45px;
+		padding-right: 50px;	
 	}
 
 	.image img {
@@ -417,19 +421,24 @@ background-color:#000;
 		position: absolute;
 		width:30px;
 		height:30px;
-		right: 0;
-		top: 14px;
+		left: 9px;
+		top: 0px;
 	}
 
 }
 
 @media (min-width: 992px) {
 	h2{
-		left: 2%;
+		left: 4%;
 	}
 
 	.main {
 		max-width: 1024px;
+	}
+
+	.gallery {
+		padding-left: 55px;
+		padding-right: 60px;	
 	}
 
 	.image img {
@@ -449,7 +458,6 @@ background-color:#000;
 }
 
 
-
 /********** FOOTER *****************/
 
 /** FOTTER 480 **/
@@ -461,7 +469,10 @@ footer {
 	max-width: 480px;
 	height: 130px;
 	margin: 0 auto;
+}
 
+.container{
+	max-width: 480px;
 }
 
 .footer-container {
@@ -489,12 +500,7 @@ footer {
 
 /* SOCIALICONS*/
 .social-footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-	padding: 0;
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 ul .telephone,
@@ -515,12 +521,7 @@ ul .footer-mail{
 	right: 4px;
 }		
 .icons {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	padding: 0;
-	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .bg-same{
@@ -544,18 +545,14 @@ ul .footer-mail{
 .icons li {
 	margin-left: 5px;
 	margin-right: 5px;
+	padding: 0px;
 }
 
 .social-text {
 	font-family: Arial, sans-serif;
 	font-size: 9px;
 	color: #fff;
-	text-align: center;
 	margin-bottom: 20px;
-}
-
-.icons li{
-	padding: 0px;
 }
 
 .icons li a { 
@@ -641,7 +638,7 @@ ul .footer-mail{
 
 	.container { 	
 		max-width: 1024px;
-	}
+	}	
 
 	.social-text {
 		font-size: 12px;
