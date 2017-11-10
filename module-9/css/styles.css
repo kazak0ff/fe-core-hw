@@ -716,9 +716,8 @@ ul .footer-mail{
 	color: #60bbe9;
 }
 
-.tour-button input {
-	position: relative;
-	left: 35px;
+.browse-tour-button input,
+.search-tour-button input{
 	background-color: #fbf6f9;	
 	outline: none;
 	border: 1.5px solid #beb7b8;
@@ -729,6 +728,26 @@ ul .footer-mail{
 	cursor: pointer;
 	font-size: 11px;
 	margin-bottom: 20px;
+}
+
+.search-tour-button input{
+	position: relative;
+	left: 35px;
+}
+
+.tour-button input {
+	position: relative;
+	background-color: #fbf6f9;	
+	outline: none;
+	border: 1.5px solid #beb7b8;
+	border-radius: 5px;
+	width: 94px;
+	height: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 16.44px;
+	margin-bottom: 20px; 
+	text-align: center;
 }
 
 .tour-search-form {
