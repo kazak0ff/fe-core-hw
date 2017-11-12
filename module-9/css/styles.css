@@ -8,6 +8,7 @@ body {
 	background-size: cover;
 	box-sizing: border-box;
 	overflow-x:hidden;
+	counter-reset: count-box;
 }
 
 nav {
@@ -358,6 +359,7 @@ background-color:#000;
 }
 
 .topbutton {
+	z-index: 1000;
 	position: fixed;
 	width:15px;
 	height:15px;
@@ -689,7 +691,9 @@ ul .footer-mail{
 /************** TOURS *****************/
 
 /* Tours Section */
-
+.tour{
+	padding-top: 40px;
+}
 
 .tours-h2 {
 	position: relative;
@@ -732,7 +736,7 @@ ul .footer-mail{
 
 .search-tour-button input{
 	position: relative;
-	left: 35px;
+	left: 18px;
 }
 
 .tour-button input {
@@ -751,10 +755,14 @@ ul .footer-mail{
 }
 
 .tour-search-form {
-	padding: 0 35px;
+	padding: 0 17px;
+	margin-top: 20px;
 }
 
 /* Tours Aside */
+.base-search {
+	margin-top: 50px;
+}
 
 .browse-text {
 	font-size: 10px;
@@ -791,15 +799,7 @@ option {
 	background-color: #e3e2e2;
 }
 
-.tours-h2-search {
-	position: relative;
-	left: 15px;
-	width: 100%;
-	font-size: 32px;
-	font-weight: 300;
-	margin-top: 10px;
-	margin-bottom: 40px;
-}
+
 
 .blue-p {
 	margin: 0;
@@ -818,6 +818,14 @@ option {
 }
 
 @media (min-width: 768px) {
+	.tour{
+		padding-top: 60px;
+	}
+
+	.base-search {
+		margin-top: 90px;
+	}
+
 	.tour-image img {
 		width: 160px;
 		height: auto;
@@ -829,6 +837,11 @@ option {
 
 	.tour-info p {
 		font-size: 11.91px;
+		margin-bottom: 0px;
+	}
+
+	.tours-h2 {
+		left: 52px;
 	}
 
 	.main-tour-text {
@@ -838,9 +851,32 @@ option {
 	.price {
 		font-size: 15.48px;
 	}
+
+	.tour-browse-form {
+		margin-top: 23px;
+		margin-left: 20px;
+	}
+
+	.search-tour-button input{
+		left: 18px;
+	}
+
+	.tour-button input {
+		width: 74px;
+		height: 24px;
+		font-size: 13.1px;
+	}
 }
 
 @media (min-width: 992px) {
+	.tour{
+		padding-top: 45px;
+	}
+
+	.base-search {
+		margin-top: 0px;
+	}
+
 	.tour-image img {	
 		width: 134px;
 		height: auto;
@@ -849,7 +885,18 @@ option {
 	.tour-info p {
 		font-size: 10px;
 	}
+	.tour-info {
+		line-height: 1.2;
+	}
 
+	.tours-h2 {
+		left: 27px;
+	}
+
+	.tours-h2-main {
+		left: 58px;
+	}
+	
 	.main-tour-text {
 		font-size: 12px;
 	}
@@ -857,4 +904,202 @@ option {
 	.price {
 		font-size: 13px;
 	}
+
+	.tour-browse-form {
+		margin-top: 35px;
+		margin-left: 0px;
+	}
+
+	.tour-button input {
+		width: 62px;
+		height: 22px;
+		font-size: 11px;
+	}
+}
+
+/********** ABOUT **********/
+
+.about-image {
+	overflow:hidden;
+	height: 100px;
+}
+
+.ny-image {
+	text-align: center;
+	width: 406px;
+	margin: 0 auto;
+	display: block;
+}
+
+.section-about {
+	padding: 0 40px;
+	padding-top: 30px;
+}
+
+.section-about h4 {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #263555;
+}
+
+.section-about p {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #4e5050;
+}
+
+.circle:before {
+  font-weight: lighter;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  color: white;
+  counter-increment: count-box;
+  content: counter(count-box); 
+  padding-right:8px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 10px;
+  background: #38afe5;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  border: #429dc7 solid 1px;
+}
+
+h4.circle {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #4e5050;
+}
+
+.our-principes {
+	padding: 0 0px;
+	margin-top: 10px;
+}
+
+.aside-about {
+	margin-top: 40px;
+}
+
+.our-principes h4 {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #263555;
+}
+
+.our-principes p {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #4e5050;
+}
+
+.offer-about h4 {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #263555;
+}
+
+.offer-about p {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #4e5050;
+}
+
+.offer-about {
+	padding: 0 25px;
+	margin-top: 50px;
+}
+
+.offer-about h2 {
+	left: 0%;
+}
+
+.content ul > li:before {
+  content: url(../img/bf.png);
+  margin-right: 10px;
+}
+
+.content {
+	padding: 0 30px;
+	margin-top: 35px;
+	font-family: Arial, sans-serif;
+	font-stretch: 14px;
+	color: #263555;
+}
+
+.aside-about {
+	padding: 0 40px;
+	margin-top: 65px;
+}
+
+.aside-about h2 {
+	left: -3%;
+}
+
+.aside-about h4 {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #263555;
+}
+
+.aside-about p {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #4e5050;
+}
+
+.bubble {
+  position: relative;
+  left: 0px;
+  width: 268px;
+  height: 114px;
+  padding: 0px;
+  background: #fcfafa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 4px;
+  border: #dfdcdc solid 1px;
+  right: 10px;
+  margin-bottom: 25px;
+}
+
+.bubble-text {
+	font-family: Arial, sans-serif;
+	margin-top: 14px;
+	position: relative;	
+	left: 10px;
+	width: 220px;
+	color: #263555;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 16px 10px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 123px;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 19px 11px 0;
+  border-color: #e9e6e6 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -20px;
+  left: 122px;
+}
+
+.main-about {
+	padding-bottom: 50px;
 }

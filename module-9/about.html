@@ -1,137 +1,165 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<meta charset="UTF-8">
-	<title>About</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Tours</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<header>
-		<nav>	
-			<ul class="menu">
-				<li class="menu__item">
-					<a href="#">HOME</a>
-				</li>
-				<li class="menu__item">
-					<a href="about.html">ABOUT</a>
-					<ul class="submenu">
-			          <li class="submenu__item">
-			            <a class="first-submenu" href="#">AGENCY</a>
-			          </li>
-			          <li class="submenu__item">
-			            <a href="#">NEWS</a>
-			          </li>
-			          <li class="submenu__item">
-			            <a href="#">TEAM</a>
-			          </li>
-			        </ul>
-				</li>
-				<li class="menu__item">
-					<a href="gallery.html">GALLERY</a>
-				</li>
-				<li class="menu__item">
-					<a href="#" class="logo">JOURNEY</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">TOURS</a>
-				</li>
-				<li class="menu__item">
-					<a href="blog.html">BLOG</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">CONTACTS</a>
-				</li>
-			</ul>
-		</nav>	
-	</header>
-	<main  class="main">
-		<section class="profiles">
-			<h2>AGENCY PROFILE</h2>
-			<img src="img/NY.jpg" alt="New Year">
-			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, modi.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aperiam distinctio porro quod quo exercitationem consectetur, placeat, ipsum totam temporibus incidunt, neque deserunt. Aperiam nam assumenda necessitatibus, dignissimos architecto eligendi! Nesciunt placeat, assumenda quidem earum ducimus, inventore obcaecati iste commodi! Aut molestias ea dolore, ut ducimus, ab suscipit nobis dolor, saepe sint nesciunt animi? Exercitationem rerum, consectetur beatae a officiis est, quibusdam consequatur itaque veniam ratione, placeat tempore, harum vitae suscipit totam reiciendis esse! In numquam cum quidem temporibus consequatur ea magni sit aut ullam perspiciatis corporis inventore aspernatur qui dolores, nobis iusto accusamus, natus esse pariatur nostrum libero vitae sapiente. Voluptate, distinctio labore adipisci ullam quo dolores quisquam necessitatibus deserunt ex temporibus sunt aliquam odit earum sapiente autem soluta officiis inventore alias accusantium accusamus asperiores nam. Maiores similique deleniti dolor incidunt eligendi accusamus nesciunt perspiciatis aspernatur, impedit fugiat iure, minima reprehenderit. Magnam, animi, laborum. Nihil consectetur facere at quisquam.
-			</p>
+	<header class="header">
+    <nav>
+        <div class="container">
+            <div class="row justify-content-center">
+                <ul class="menu col-7 col-md-6 col-lg-10">
+                    <li class="menu__item">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html">ABOUT</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a class="first-submenu" href="#">AGENCY</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">NEWS</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#">TEAM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="logo_item">
+                        <a href="#" class="logo">JOURNEY</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">TOURS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+	<main  class="main main-about container">
+		<section class="row justify-content-center">
+			<h2 class="col-12">AGENCY PROFILE</h2>
+			<div class="col-12 about-image align-items-center">
+				<img class="ny-image" src="img/NY.jpg" alt="New Year">
+			</div>
+			<div class="col-12 section-about">	
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, modi.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aperiam distinctio porro quod quo exercitationem consectetur, placeat, ipsum totam temporibus incidunt, neque deserunt. Aperiam nam assumenda necessitatibus, dignissimos architecto eligendi! Nesciunt placeat, assumenda quidem earum ducimus, inventore obcaecati iste commodi! Aut molestias ea dolore, ut ducimus, ab suscipit nobis dolor, saepe sint nesciunt animi? Exercitationem rerum, consectetur beatae a officiis est, quibusdam consequatur itaque veniam ratione, placeat tempore, harum vitae suscipit totam reiciendis esse! In numquam cum quidem temporibus consequatur ea magni sit aut ullam perspiciatis corporis inventore aspernatur qui dolores, nobis iusto accusamus, natus esse pariatur nostrum libero vitae sapiente. Voluptate, distinctio labore adipisci ullam quo dolores quisquam necessitatibus deserunt ex temporibus sunt aliquam odit earum sapiente autem soluta officiis inventore alias accusantium accusamus asperiores nam. Maiores similique deleniti dolor incidunt eligendi accusamus nesciunt perspiciatis aspernatur, impedit fugiat iure, minima reprehenderit. Magnam, animi, laborum. Nihil consectetur facere at quisquam.
+				</p>
+			</div>
 		</section>
-		<aside>
-			<h2>OUR PRINCIPLES</h2>
-			<h4 class="circle">Lorem ipsum.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
-			<h4 class="circle">Lorem ipsum.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
-			<h4 class="circle">Lorem ipsum.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
+		<aside class="row aside-about">
+			<h2 class="col-12">OUR PRINCIPLES</h2>
+			<div class="row our-principes">
+				<div class="col-12">
+					<h4 class="circle">Lorem ipsum.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
+				</div>
+				<div class="col-12">
+					<h4 class="circle">Lorem ipsum.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
+				</div>
+				<div class="col-12">
+					<h4 class="circle">Lorem ipsum.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae, maxime pariatur sunt ipsum consectetur.</p>
+				</div>
+			</div>
 		</aside>
 		<hr>
-		<article>
-			<h2>WHAT WE OFFER</h2>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, vero, deleniti. Nihil at facilis hic, laudantium optio labore reiciendis porro veritatis eos vero autem, delectus voluptas, officiis ratione rerum fugiat, perferendis qui consequuntur quod.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sequi eum cumque odit temporibus obcaecati, molestiae, animi. Dolore dolorum laboriosam ea facilis provident officia, repellat soluta quibusdam quia? Fuga nihil porro soluta debitis, consectetur repudiandae perferendis praesentium itaque accusamus suscipit eos incidunt quidem vitae adipisci facere eaque animi eius laborum sequi asperiores sed, possimus aut repellendus ipsum laudantium. Nisi repellat minus ex. Incidunt ab veniam accusantium quod aliquam necessitatibus delectus fugit similique ullam optio eaque, id voluptate! Vero architecto sint, error quam ducimus expedita? Quae sed, sequi veritatis deserunt maiores, excepturi vero aliquam a illo atque vel ratione amet saepe.</p>
-			<div class="content">
-				<ul>
-					<li>Lorem ipsum dolor.</li>
-					<li>Voluptate, explicabo!</li>
-					<li>Officiis, similique.</li>
-					<li>Assumenda, autem!</li>
-					<li>Iusto, similique.</li>
-					<li>Enim, vitae, nulla?</li>
-					<li>Sint, molestias, officia.</li>
-					<li>Praesentium culpa!</li>
-					<li>Rerum, delectus, odit!</li>
+		<article class="row offer-about">
+			<h2 class="col-12">WHAT WE OFFER</h2>
+			<div class="col-12">
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, vero, deleniti. Nihil at facilis hic, laudantium optio labore reiciendis porro veritatis eos vero autem, delectus voluptas, officiis ratione rerum fugiat, perferendis qui consequuntur quod.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sequi eum cumque odit temporibus obcaecati, molestiae, animi. Dolore dolorum laboriosam ea facilis provident officia, repellat soluta quibusdam quia? Fuga nihil porro soluta debitis, consectetur repudiandae perferendis praesentium itaque accusamus suscipit eos incidunt quidem vitae adipisci facere eaque animi eius laborum sequi asperiores sed, possimus aut repellendus ipsum laudantium. Nisi repellat minus ex. Incidunt ab veniam accusantium quod aliquam necessitatibus delectus fugit similique ullam optio eaque, id voluptate! Vero architecto sint, error quam ducimus expedita?</p>
+			</div>
+			<div class="content row">
+				<ul class="row">
+					<li class="col-6">Lorem ipsum dolor.</li>
+					<li class="col-6">Voluptate, explicabo!</li>
+					<li class="col-6">Officiis, similique.</li>
+					<li class="col-6">Assumenda, autem!</li>
+					<li class="col-6">Iusto, similique.</li>
+					<li class="col-6">Enim, vitae, nulla?</li>
+					<li class="col-6">Sint, molestias, officia.</li>
+					<li class="col-6">Praesentium culpa!</li>
+					<li class="col-6">Rerum, delectus, odit!</li>
 				</ul>
 			</div>
 		</article>
-		<aside>
-			<h2>TESTIMONIAL</h2>
-			<div class="bubble">	
+		<aside class="row aside-about justify-content-center">
+			<h2 class="col-12">TESTIMONIAL</h2>
+			<div class="bubble col-8">	
 				<p class="bubble-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minima, facilis ab odio magni, est rem deserunt beatae quidem est rem deserunt beatae quidem ipsum dolor sit ipsum dolor sit edfeswfw ewfew
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minima, facilis ab odio magni, est rem deserunt beatae quidem est rem deserunt beatae quidem ipsum dolor sit ipsum dolor sit."
 				</p>
 			</div>
 			<br>
-			<h4 class="text-center ">Mark Jonson</h4>
+			<h4 class="text-center col-12">Mark Jonson</h4>
 			<p class="text-center">Lorem ipsum dolor sit amet.</p>
 		</aside>
 	</main>
-	<footer>	
-		<ul class="footer">
-			<li>
-				<a href="#">FAQS Page</a>
-				</li>
-			<li>
-				<a href="#">Useful</a>
-				</li>
-			<li>
-				<a href="#">Insurance</a>
-				</li>
-			<li>Contact Us:
-			</li>
-			<li>
-				<a href="#">People Say</a>
-				</li>
-			<li>
-				<a href="#">links</a>
-				</li>
-			<li>
-				<a href="#">Family</a>
-				</li>
-			<li>TEL: 1-800-234-5678 info@demolink.org
-			</li>
-		</ul>
-	</footer>
-	<div class="social-footer">
-		<ul class="icons">
-			<li class="bg-fb bg-same"><a href="#"></a></li>
-			<li class="bg-gp bg-same"><a href="#"></a></li>
-			<li class="bg-ln bg-same"><a href="#"></a></li>
-			<li class="bg-tw bg-same"><a href="#"></a></li>
-		</ul>
-		<span class="social-text">Journey © 2013 | Privacy Policy | Website designed by TemplateMonster.com
-		</span>
-	</div>
+<footer class="container">
+    <div class="footer-container row">
+        <ul class="footer col-12 col-md-12 col-lg-12 justify-content-center">
+            <li>
+                <a href="#">FAQS PAGE</a>
+            </li>
+            <li>
+                <a href="#">USEFUL LINKS</a>
+            </li>
+            <li>
+                <a href="#">INSURANCE</a>
+            </li>
+            <li>
+                <a href="#">PEOPLE SAY</a>
+            </li>
+            <li>
+                <a href="#">PARTNERS</a>
+            </li>
+            <li>
+                <a href="#">FAMILY TRAVEL</a>
+            </li>
+            <li>
+                CONTACT US:
+            </li>
+            <li class="telephone">
+                +1-800-234-5678
+            </li>
+            <li class="footer-mail">
+                info@demolink.org
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="social-footer container align-content-center">
+    <ul class="icons row justify-content-center">
+        <li class="bg-fb bg-same"><a href="#"></a></li>
+        <li class="bg-gp bg-same"><a href="#"></a></li>
+        <li class="bg-ln bg-same"><a href="#"></a></li>
+        <li class="bg-tw bg-same"><a href="#"></a></li>
+    </ul>
+    <span class="social-text row justify-content-center">Journey © 2013 | Privacy Policy | Website designed by TemplateMonster.com
+         </span>
+</div>
 
 </body>
 </html>
