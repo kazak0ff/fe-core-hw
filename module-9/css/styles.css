@@ -22,9 +22,12 @@ ul {
 }
 
 ul > li {
+	position: relative;
+  	right: 13px;
+  	line-height: 2.2;
 	list-style: none;	
 	font-family: 'Pathway Gothic One', sans-serif; 
-	font-size: 20px;
+	font-size: 14px;
 }
 
 a {
@@ -942,7 +945,8 @@ option {
 	color: #263555;
 }
 
-.section-about p {
+.section-about p,
+.bottom-section-about {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	color: #4e5050;
@@ -977,10 +981,6 @@ h4.circle {
 .our-principes {
 	padding: 0 0px;
 	margin-top: 10px;
-}
-
-.aside-about {
-	margin-top: 40px;
 }
 
 .our-principes h4 {
@@ -1029,7 +1029,8 @@ h4.circle {
 	color: #263555;
 }
 
-.aside-about {
+.aside-about,
+.aside-about-bubble {
 	padding: 0 40px;
 	margin-top: 65px;
 }
@@ -1065,8 +1066,9 @@ h4.circle {
   margin-bottom: 25px;
 }
 
-.bubble-text {
+p.bubble-text {
 	font-family: Arial, sans-serif;
+	font-weight: 500;
 	margin-top: 14px;
 	position: relative;	
 	left: 10px;
@@ -1102,4 +1104,116 @@ h4.circle {
 
 .main-about {
 	padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	.about-image {
+		overflow:hidden;
+		height: auto;
+		width: 360px;
+	}
+
+	.section-about h4,
+	.our-principes h4,
+	.offer-about h4 {
+		font-size: 15px;
+	}
+
+	.section-about p,
+	.bottom-section-about p,
+	.our-principes p,
+	.offer-about p {
+		font-size: 13px;
+	}
+
+	.section-about {
+		padding-right: 40px;
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+
+	.bottom-section-about {
+		padding: 0 40px;
+	}
+
+	.ny-image {
+		width: 360px;
+		padding-top: 20px;
+	}
+
+	.relative-left {
+		position: relative;
+		left: 35px;
+	}
+
+	.about-image {
+		padding-left: 40px;
+	}
+
+	.aside-about h2 {
+		left: -2%;
+	}
+
+	.aside-about {
+		padding-right: 70px;
+	}
+
+	.bubble {
+	  width: 158px;
+	  height: 236px;
+	}
+
+	p.bubble-text {
+		width: 130px;
+		margin-top: 14px;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.aside-about-bubble  {
+		padding-right: 20px;
+		padding-left: 15px;
+		margin-top: 0px;
+	}
+
+	.bubble:after {
+	  bottom: -15px;
+	  left: 63px;
+	}
+
+	.bubble:before {
+	  bottom: -20px;
+	  left: 62px;
+	}
+
+	.offer-about h4 {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.content ul > li {
+	  font-size: 15px;
+
+	}
+}
+
+@media (min-width: 1024px) {
+
+.aside-about,
+.aside-about-bubble {
+	padding-left: 15px;
+	padding-right: 60px;
+	margin-top: 0px;
+}
+
+.section-about {
+	padding-right: 15px;
+	padding-top: 0px;
+	padding-top: 20px;
+}
+
+.aside-about h4 {
+	margin-top: 8px;
+}
+
 }
