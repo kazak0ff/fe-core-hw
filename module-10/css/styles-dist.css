@@ -6,12 +6,19 @@
 body {
 	background: url('../img/background.jpg') no-repeat;
 	background-size: cover;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	overflow-x:hidden;
 }
 
 nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -42,6 +49,9 @@ a {
 }
 
 .logo_item {
+	-webkit-box-ordinal-group: 0;
+	-webkit-order: -1;
+	-ms-flex-order: -1;
 	order: -1;
 	margin-bottom: 45px;
 	width: 100%;
@@ -76,9 +86,21 @@ a {
 .menu {
 	width: 46%;
 	list-style-type: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -86,7 +108,13 @@ a {
 	position: relative;
 	left: 15px;
 	width: 33%;	
+	display: -webkit-box;	
+	display: -webkit-flex;	
+	display: -ms-flexbox;	
 	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
 	justify-content: flex-start;
 	margin-bottom: 10px;
 }
@@ -178,6 +206,9 @@ a {
 	}
 
 	.logo_item {
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
 		order: -1;
 		margin-bottom: 45px;
 		position: relative;
@@ -239,7 +270,13 @@ a {
 
 	.menu__item {
 		width: 14%;	
+		display: -webkit-box;	
+		display: -webkit-flex;	
+		display: -ms-flexbox;	
 		display: flex;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
 		justify-content: flex-start;
 		margin-bottom: 10px;
 	}
@@ -250,6 +287,9 @@ a {
 	}
 
 	.logo_item {
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
 		order: 0;
 		width: 14%;
 		text-align: center;
@@ -291,7 +331,12 @@ a {
 
 	.menu {
 		width: 100%;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
 	}
 }
@@ -321,9 +366,20 @@ h2{
 
 .gallery {
 	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	margin-left: 7.7%;
 	margin-right: 7.7%;
@@ -479,7 +535,12 @@ background-color:#000;
 /** FOTTER 480 **/
 
 footer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
 	align-content: center;
 	background-color: #30455b;
 	max-width: 480px;
@@ -489,16 +550,35 @@ footer {
 
 .footer-container {
 	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .footer {
 	width: 64%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;	
+	-webkit-box-pack: start;	
+	-webkit-justify-content: flex-start;	
+	-ms-flex-pack: start;	
 	justify-content: flex-start;	
+	-webkit-box-align: center;	
+	-webkit-align-items: center;	
+	-ms-flex-align: center;	
 	align-items: center;	
+	-webkit-align-content: center;	
+	-ms-flex-line-pack: center;	
 	align-content: center;
 }
 
@@ -513,8 +593,18 @@ footer {
 
 /* SOCIALICONS*/
 .social-footer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 0;
@@ -541,8 +631,14 @@ ul .footer-mail{
 .icons {
 	width: 100%;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 20px;
 }
